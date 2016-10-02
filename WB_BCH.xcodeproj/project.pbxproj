@@ -21,6 +21,7 @@
 		9FF09FB31DA11CEA002C3CE5 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FB21DA11CEA002C3CE5 /* UIButton+Extension.swift */; };
 		9FF09FBC1DA126B9002C3CE5 /* UIView+BCHHelperKitUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FBB1DA126B9002C3CE5 /* UIView+BCHHelperKitUIKit.m */; };
 		9FF09FBF1DA12B47002C3CE5 /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FBE1DA12B47002C3CE5 /* WBDemoViewController.swift */; };
+		9FF09FC21DA130EB002C3CE5 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FC11DA130EB002C3CE5 /* UIBarButtonItem+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		9FF09FBA1DA126B9002C3CE5 /* UIView+BCHHelperKitUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+BCHHelperKitUIKit.h"; path = "UIView/UIView+BCHHelperKitUIKit.h"; sourceTree = "<group>"; };
 		9FF09FBB1DA126B9002C3CE5 /* UIView+BCHHelperKitUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+BCHHelperKitUIKit.m"; path = "UIView/UIView+BCHHelperKitUIKit.m"; sourceTree = "<group>"; };
 		9FF09FBE1DA12B47002C3CE5 /* WBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
+		9FF09FC01DA130EB002C3CE5 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		9FF09FC11DA130EB002C3CE5 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,8 @@
 		9FF09E501DA116D5002C3CE5 /* Addition */ = {
 			isa = PBXGroup;
 			children = (
+				9FF09FC01DA130EB002C3CE5 /* UIBarButtonItem+Extension.h */,
+				9FF09FC11DA130EB002C3CE5 /* UIBarButtonItem+Extension.m */,
 				9FF09FBA1DA126B9002C3CE5 /* UIView+BCHHelperKitUIKit.h */,
 				9FF09FBB1DA126B9002C3CE5 /* UIView+BCHHelperKitUIKit.m */,
 			);
@@ -282,6 +287,7 @@
 				9FF09E401DA0E522002C3CE5 /* WBMainViewController.swift in Sources */,
 				9FF09E461DA0E5A4002C3CE5 /* WBHomeViewController.swift in Sources */,
 				9FF09E1D1DA0DFA9002C3CE5 /* AppDelegate.swift in Sources */,
+				9FF09FC21DA130EB002C3CE5 /* UIBarButtonItem+Extension.m in Sources */,
 				9FF09E421DA0E544002C3CE5 /* WBNavigationController.swift in Sources */,
 				9FF09E481DA0E5AF002C3CE5 /* WBMessageViewController.swift in Sources */,
 			);

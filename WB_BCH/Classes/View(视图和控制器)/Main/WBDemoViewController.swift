@@ -33,6 +33,6 @@ extension WBDemoViewController{
     override func setUpUI() {
         super.setUpUI()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", style: .plain, target: self, action: #selector(WBDemoViewController.showNext))
+        navigationItem.rightBarButtonItem = UIBarButtonItem.bch_rightItem(withTarget: self, action: #selector(WBDemoViewController.showNext), text: "下一个")
     }
 }

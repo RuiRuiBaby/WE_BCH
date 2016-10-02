@@ -10,6 +10,7 @@
 #define WB_Bridge_h
 
 #import "UIView+BCHHelperKitUIKit.h"
+#import "UIBarButtonItem+Extension.h"
 
 
 #endif /* WB_Bridge_h */
