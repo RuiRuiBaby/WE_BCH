@@ -8,6 +8,7 @@
 
 #import "UIBarButtonItem+Extension.h"
 
+
 @implementation UIBarButtonItem (Extension)
 
 #pragma mark - 导航栏 `纯文字item` 快速创建
@@ -73,10 +74,11 @@
     [backButton setTitle:text forState:UIControlStateNormal];
     [backButton setImage:image forState:UIControlStateNormal];
     [backButton setImage:highImage forState:UIControlStateHighlighted];
-    [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [backButton setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    [backButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [backButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+    
     [backButton sizeToFit];
-    backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
+    backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -30, 0, 0);
     [backButton addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     
     return  [[UIBarButtonItem alloc] initWithCustomView:backButton];

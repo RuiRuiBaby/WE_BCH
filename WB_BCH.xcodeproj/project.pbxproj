@@ -24,6 +24,8 @@
 		9FF09FC21DA130EB002C3CE5 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FC11DA130EB002C3CE5 /* UIBarButtonItem+Extension.m */; };
 		9FF09FC61DA13490002C3CE5 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FC51DA13490002C3CE5 /* UIBarButtonItem+Extensions.swift */; };
 		9FF09FC81DA13AF9002C3CE5 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FC71DA13AF9002C3CE5 /* UIScreen+Extensions.swift */; };
+		9FF09FCB1DA1515C002C3CE5 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FCA1DA1515C002C3CE5 /* UIImage+Tint.m */; };
+		9FF09FCE1DA1553A002C3CE5 /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FCD1DA1553A002C3CE5 /* UIColor+expanded.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,10 @@
 		9FF09FC11DA130EB002C3CE5 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		9FF09FC51DA13490002C3CE5 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		9FF09FC71DA13AF9002C3CE5 /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
+		9FF09FC91DA1515C002C3CE5 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
+		9FF09FCA1DA1515C002C3CE5 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
+		9FF09FCC1DA1553A002C3CE5 /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+expanded.h"; sourceTree = "<group>"; };
+		9FF09FCD1DA1553A002C3CE5 /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+expanded.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,10 @@
 		9FF09E501DA116D5002C3CE5 /* Addition */ = {
 			isa = PBXGroup;
 			children = (
+				9FF09FC91DA1515C002C3CE5 /* UIImage+Tint.h */,
+				9FF09FCA1DA1515C002C3CE5 /* UIImage+Tint.m */,
+				9FF09FCC1DA1553A002C3CE5 /* UIColor+expanded.h */,
+				9FF09FCD1DA1553A002C3CE5 /* UIColor+expanded.m */,
 				9FF09FC01DA130EB002C3CE5 /* UIBarButtonItem+Extension.h */,
 				9FF09FC11DA130EB002C3CE5 /* UIBarButtonItem+Extension.m */,
 				9FF09FBA1DA126B9002C3CE5 /* UIView+BCHHelperKitUIKit.h */,
@@ -287,10 +297,12 @@
 				9FF09E441DA0E569002C3CE5 /* WBBaseViewController.swift in Sources */,
 				9FF09FB31DA11CEA002C3CE5 /* UIButton+Extension.swift in Sources */,
 				9FF09E4F1DA0EEDA002C3CE5 /* Bundle+Extension.swift in Sources */,
+				9FF09FCB1DA1515C002C3CE5 /* UIImage+Tint.m in Sources */,
 				9FF09E4C1DA0E5C6002C3CE5 /* WBProfileViewController.swift in Sources */,
 				9FF09E4A1DA0E5BA002C3CE5 /* WBDiscoverViewController.swift in Sources */,
 				9FF09FBF1DA12B47002C3CE5 /* WBDemoViewController.swift in Sources */,
 				9FF09FC81DA13AF9002C3CE5 /* UIScreen+Extensions.swift in Sources */,
+				9FF09FCE1DA1553A002C3CE5 /* UIColor+expanded.m in Sources */,
 				9FF09E401DA0E522002C3CE5 /* WBMainViewController.swift in Sources */,
 				9FF09FC61DA13490002C3CE5 /* UIBarButtonItem+Extensions.swift in Sources */,
 				9FF09E461DA0E5A4002C3CE5 /* WBHomeViewController.swift in Sources */,

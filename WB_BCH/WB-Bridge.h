@@ -11,6 +11,7 @@
 
 #import "UIView+BCHHelperKitUIKit.h"
 #import "UIBarButtonItem+Extension.h"
-
+#import "UIImage+Tint.h"
+#import "UIColor+Expanded.h"
 
 #endif /* WB_Bridge_h */
