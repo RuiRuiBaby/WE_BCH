@@ -28,6 +28,12 @@ class WBMainViewController: UITabBarController {
     
     // MARK: - Events
     
+    // FIXME: 没有实现
+    //private 能够保证方法私有,仅在当前对象呗访问
+    //@objc 允许这个函数在 '运行时' 通过 OC 的消息机制被调用
+    @objc private func composeStatusClick() {
+        print("撰写微博")
+    }
     
     
     // MARK: – Private Methods
@@ -36,12 +42,13 @@ class WBMainViewController: UITabBarController {
         tabBar.addSubview(composeButton)
         
         let count = CGFloat(childViewControllers.count)
+        //将内缩进的宽度减少,能够让按钮的宽度变大,盖住容错点,防止穿帮
         let w = tabBar.bch_width / count - 1
         
         //CGRectInset 内边距
         composeButton.frame = tabBar.bounds.insetBy(dx: 2 * w, dy: 0)
         
-        
+        composeButton.addTarget(self, action:#selector(WBMainViewController.composeStatusClick), for: .touchUpInside)
     }
     
     /// 设置子控制器
