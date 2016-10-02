@@ -15,6 +15,8 @@ class WBMainViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        setUpChildViewControllers()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,8 +31,20 @@ class WBMainViewController: UITabBarController {
     // MARK: – Private Methods
     
     /// 设置子控制器
-    func setUpChildViewControllers() {
+    private func setUpChildViewControllers() {
         
+        let array = [
+            ["clsName":"WBHomeViewController","title":"首页","imageName":"tabbar_home"],
+            ["clsName":"WBMessageViewController","title":"消息","imageName":"tabbar_message"],
+            ["clsName":"WBDiscoverViewController","title":"发现","imageName":"tabbar_discover"],
+            ["clsName":"WBProfileViewController","title":"我的","imageName":"tabbar_profile"],
+        ]
+        
+        var arrayM = [UIViewController]()
+        for dict in array {
+            arrayM.append(controller(dict:dict))
+        }
+        viewControllers = arrayM
     }
     
     /// 使用字典创建一个子控制器
@@ -38,7 +52,7 @@ class WBMainViewController: UITabBarController {
     /// - parameter dict: 信息字典(clsName,title,imageName)
     ///
     /// - returns: 子控制器
-    func controller(dict:[String:String]) -> UIViewController {
+    private func controller(dict:[String:String]) -> UIViewController {
         
         //1.取得字典内容
         guard let clsName = dict["clsName"],
@@ -53,12 +67,19 @@ class WBMainViewController: UITabBarController {
         //2.创建控制器
         let vc = cls.init()
         
-        //3.设置属性(标题,图片,tabbar的标题字体)
+        //3.设置属性(标题,tabbar的标题字体)
         vc.title = title
-        vc.tabBarItem.image = UIImage(named: "tabbar_" + imageName)
-        vc.tabBarItem.selectedImage = UIImage(named: "tabbar_" + imageName + "_selected")?.withRenderingMode(.alwaysOriginal)
-        vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName:UIColor.orange], for: .highlighted)
-        vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName:UIFont.systemFont(ofSize: 14)], for: .highlighted)
+        
+        vc.tabBarItem.image = UIImage(named:imageName)?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.selectedImage = UIImage(named:imageName + "_highlighted")?.withRenderingMode(.alwaysOriginal)
+        
+        let attributes = [NSForegroundColorAttributeName:UIColor.lightGray,
+                                  NSFontAttributeName:UIFont.systemFont(ofSize: 12)]
+        let selectedAttributes = [NSForegroundColorAttributeName:UIColor.orange,
+                          NSFontAttributeName:UIFont.systemFont(ofSize: 12)]
+        
+        vc.tabBarItem.setTitleTextAttributes(attributes, for: .normal)
+        vc.tabBarItem.setTitleTextAttributes(selectedAttributes, for: .selected)
         
         let nav = WBNavigationController(rootViewController: vc)
         
