@@ -9,6 +9,7 @@
 #ifndef WB_Bridge_h
 #define WB_Bridge_h
 
+#import "UIView+BCHHelperKitUIKit.h"
 
 
 #endif /* WB_Bridge_h */

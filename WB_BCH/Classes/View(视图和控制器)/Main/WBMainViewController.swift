@@ -17,12 +17,14 @@ class WBMainViewController: UITabBarController {
         // Do any additional setup after loading the view.
         
         setUpChildViewControllers()
+   
+        setUpComposeButton()
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+   
+    private lazy var composeButton : UIButton = UIButton.bch_buttonWithImage(imageName: "tabbar_compose_icon_add", backgroundImage: "tabbar_compose_button")
+    
     
     // MARK: - Events
     
@@ -30,12 +32,25 @@ class WBMainViewController: UITabBarController {
     
     // MARK: – Private Methods
     
+    private func setUpComposeButton() {
+        tabBar.addSubview(composeButton)
+        
+        let count = CGFloat(childViewControllers.count)
+        let w = tabBar.bch_width / count - 1
+        
+        //CGRectInset 内边距
+        composeButton.frame = tabBar.bounds.insetBy(dx: 2 * w, dy: 0)
+        
+        
+    }
+    
     /// 设置子控制器
     private func setUpChildViewControllers() {
         
         let array = [
             ["clsName":"WBHomeViewController","title":"首页","imageName":"tabbar_home"],
             ["clsName":"WBMessageViewController","title":"消息","imageName":"tabbar_message"],
+            ["clsName":"UIViewController"],
             ["clsName":"WBDiscoverViewController","title":"发现","imageName":"tabbar_discover"],
             ["clsName":"WBProfileViewController","title":"我的","imageName":"tabbar_profile"],
         ]
