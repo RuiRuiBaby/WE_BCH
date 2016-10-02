@@ -20,6 +20,7 @@
 		9FF09E4F1DA0EEDA002C3CE5 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09E4E1DA0EEDA002C3CE5 /* Bundle+Extension.swift */; };
 		9FF09FB31DA11CEA002C3CE5 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FB21DA11CEA002C3CE5 /* UIButton+Extension.swift */; };
 		9FF09FBC1DA126B9002C3CE5 /* UIView+BCHHelperKitUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FBB1DA126B9002C3CE5 /* UIView+BCHHelperKitUIKit.m */; };
+		9FF09FBF1DA12B47002C3CE5 /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FBE1DA12B47002C3CE5 /* WBDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		9FF09FB21DA11CEA002C3CE5 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		9FF09FBA1DA126B9002C3CE5 /* UIView+BCHHelperKitUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+BCHHelperKitUIKit.h"; path = "UIView/UIView+BCHHelperKitUIKit.h"; sourceTree = "<group>"; };
 		9FF09FBB1DA126B9002C3CE5 /* UIView+BCHHelperKitUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+BCHHelperKitUIKit.m"; path = "UIView/UIView+BCHHelperKitUIKit.m"; sourceTree = "<group>"; };
+		9FF09FBE1DA12B47002C3CE5 /* WBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		9FF09E3B1DA0E4B2002C3CE5 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9FF09FBD1DA12B24002C3CE5 /* Test */,
 				9FF09E3F1DA0E522002C3CE5 /* WBMainViewController.swift */,
 				9FF09E411DA0E544002C3CE5 /* WBNavigationController.swift */,
 				9FF09E431DA0E569002C3CE5 /* WBBaseViewController.swift */,
@@ -186,6 +189,14 @@
 				9FF09FBB1DA126B9002C3CE5 /* UIView+BCHHelperKitUIKit.m */,
 			);
 			path = Addition;
+			sourceTree = "<group>";
+		};
+		9FF09FBD1DA12B24002C3CE5 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				9FF09FBE1DA12B47002C3CE5 /* WBDemoViewController.swift */,
+			);
+			name = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 				9FF09E4F1DA0EEDA002C3CE5 /* Bundle+Extension.swift in Sources */,
 				9FF09E4C1DA0E5C6002C3CE5 /* WBProfileViewController.swift in Sources */,
 				9FF09E4A1DA0E5BA002C3CE5 /* WBDiscoverViewController.swift in Sources */,
+				9FF09FBF1DA12B47002C3CE5 /* WBDemoViewController.swift in Sources */,
 				9FF09E401DA0E522002C3CE5 /* WBMainViewController.swift in Sources */,
 				9FF09E461DA0E5A4002C3CE5 /* WBHomeViewController.swift in Sources */,
 				9FF09E1D1DA0DFA9002C3CE5 /* AppDelegate.swift in Sources */,
