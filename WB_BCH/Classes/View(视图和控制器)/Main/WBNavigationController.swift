@@ -14,6 +14,8 @@ class WBNavigationController: UINavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        navigationBar.isHidden = true
     }
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {

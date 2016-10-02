@@ -23,6 +23,7 @@
 		9FF09FBF1DA12B47002C3CE5 /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FBE1DA12B47002C3CE5 /* WBDemoViewController.swift */; };
 		9FF09FC21DA130EB002C3CE5 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FC11DA130EB002C3CE5 /* UIBarButtonItem+Extension.m */; };
 		9FF09FC61DA13490002C3CE5 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FC51DA13490002C3CE5 /* UIBarButtonItem+Extensions.swift */; };
+		9FF09FC81DA13AF9002C3CE5 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09FC71DA13AF9002C3CE5 /* UIScreen+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		9FF09FC01DA130EB002C3CE5 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		9FF09FC11DA130EB002C3CE5 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		9FF09FC51DA13490002C3CE5 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		9FF09FC71DA13AF9002C3CE5 /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				9FF09E4E1DA0EEDA002C3CE5 /* Bundle+Extension.swift */,
 				9FF09FB21DA11CEA002C3CE5 /* UIButton+Extension.swift */,
 				9FF09FC51DA13490002C3CE5 /* UIBarButtonItem+Extensions.swift */,
+				9FF09FC71DA13AF9002C3CE5 /* UIScreen+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				9FF09E4C1DA0E5C6002C3CE5 /* WBProfileViewController.swift in Sources */,
 				9FF09E4A1DA0E5BA002C3CE5 /* WBDiscoverViewController.swift in Sources */,
 				9FF09FBF1DA12B47002C3CE5 /* WBDemoViewController.swift in Sources */,
+				9FF09FC81DA13AF9002C3CE5 /* UIScreen+Extensions.swift in Sources */,
 				9FF09E401DA0E522002C3CE5 /* WBMainViewController.swift in Sources */,
 				9FF09FC61DA13490002C3CE5 /* UIBarButtonItem+Extensions.swift in Sources */,
 				9FF09E461DA0E5A4002C3CE5 /* WBHomeViewController.swift in Sources */,
