@@ -21,7 +21,8 @@ class WBBaseViewController: UIViewController {
         setUpUI()
     }
 
-    ///重写 title 的 set 方法
+    
+    /// 重写 title 的 set 方法
     override var title: String?{
         didSet{
             navItem.title = title
@@ -35,7 +36,6 @@ class WBBaseViewController: UIViewController {
 extension WBBaseViewController{
 
     func setUpUI() {
-        view.backgroundColor = UIColor.red
         
         view.addSubview(navigationBar)
         

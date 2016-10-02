@@ -24,7 +24,21 @@ class WBNavigationController: UINavigationController {
             viewController.hidesBottomBarWhenPushed = true;
         }
 
+        var title = "返回"
+        if let vc = viewController as? WBBaseViewController {
+            
+            if childViewControllers.count == 1 {
+                title = childViewControllers.first?.title ?? "返回"
+            }
+            
+            vc.navItem.leftBarButtonItem = UIBarButtonItem.bch_leftItem(withTarget: self, action: #selector(WBNavigationController.popToParent), text: title)
+        }
+        
         super.pushViewController(viewController, animated: animated)
+    }
+    
+    @objc func popToParent(){
+        popViewController(animated: true)
     }
 
 }

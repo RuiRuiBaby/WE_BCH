@@ -41,8 +41,8 @@ extension WBHomeViewController{
     override func setUpUI() {
         super.setUpUI()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 15, target: self, action: #selector(WBHomeViewController.showFriends))
-        //UIBarButtonItem.bch_leftItem(withTarget: self, action: #selector(WBHomeViewController.showFriends), text: "好友")
+        navItem.leftBarButtonItem =
+            UIBarButtonItem.bch_leftItem(withTarget: self, action: #selector(WBHomeViewController.showFriends), text: "好友")//UIBarButtonItem(title: "好友", fontSize: 15, target: self, action: #selector(WBHomeViewController.showFriends))
         
     }
     
