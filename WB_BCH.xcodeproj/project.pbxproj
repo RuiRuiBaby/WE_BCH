@@ -17,6 +17,7 @@
 		9FF09E481DA0E5AF002C3CE5 /* WBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09E471DA0E5AF002C3CE5 /* WBMessageViewController.swift */; };
 		9FF09E4A1DA0E5BA002C3CE5 /* WBDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09E491DA0E5BA002C3CE5 /* WBDiscoverViewController.swift */; };
 		9FF09E4C1DA0E5C6002C3CE5 /* WBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09E4B1DA0E5C6002C3CE5 /* WBProfileViewController.swift */; };
+		9FF09E4F1DA0EEDA002C3CE5 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF09E4E1DA0EEDA002C3CE5 /* Bundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9FF09E471DA0E5AF002C3CE5 /* WBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMessageViewController.swift; sourceTree = "<group>"; };
 		9FF09E491DA0E5BA002C3CE5 /* WBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDiscoverViewController.swift; sourceTree = "<group>"; };
 		9FF09E4B1DA0E5C6002C3CE5 /* WBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBProfileViewController.swift; sourceTree = "<group>"; };
+		9FF09E4E1DA0EEDA002C3CE5 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		9FF09E371DA0E4B2002C3CE5 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				9FF09E4D1DA0EE64002C3CE5 /* Extensions */,
 			);
 			path = "Tools(工具)";
 			sourceTree = "<group>";
@@ -157,6 +160,14 @@
 			children = (
 			);
 			path = "ViewModel(视图模型)";
+			sourceTree = "<group>";
+		};
+		9FF09E4D1DA0EE64002C3CE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FF09E4E1DA0EEDA002C3CE5 /* Bundle+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FF09E441DA0E569002C3CE5 /* WBBaseViewController.swift in Sources */,
+				9FF09E4F1DA0EEDA002C3CE5 /* Bundle+Extension.swift in Sources */,
 				9FF09E4C1DA0E5C6002C3CE5 /* WBProfileViewController.swift in Sources */,
 				9FF09E4A1DA0E5BA002C3CE5 /* WBDiscoverViewController.swift in Sources */,
 				9FF09E401DA0E522002C3CE5 /* WBMainViewController.swift in Sources */,
