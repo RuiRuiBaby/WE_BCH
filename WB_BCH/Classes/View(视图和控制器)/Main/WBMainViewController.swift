@@ -22,7 +22,17 @@ class WBMainViewController: UITabBarController {
         
         
     }
-   
+    
+    
+    /**
+        使用代码控制设备的方向,好处,可以在需要横屏的时候,单独处理
+        设置支持的方向之后,当前的控制器及子控制器会遵守这个方向
+        如果视频播放,通常是通过 modal 展现的
+     */
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return .portrait
+    }
+    
     private lazy var composeButton : UIButton = UIButton.bch_buttonWithImage(imageName: "tabbar_compose_icon_add", backgroundImage: "tabbar_compose_button")
     
     
@@ -33,6 +43,12 @@ class WBMainViewController: UITabBarController {
     //@objc 允许这个函数在 '运行时' 通过 OC 的消息机制被调用
     @objc private func composeStatusClick() {
         print("撰写微博")
+        
+        let vc = UIViewController()
+        vc.view.backgroundColor = UIColor.cyan
+        let nav = UINavigationController(rootViewController: vc)
+        
+        present(nav, animated: true, completion: nil)
     }
     
     
